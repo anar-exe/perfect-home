@@ -1,24 +1,29 @@
-#header
+header
+    z-index: 10
     box-shadow: 0 0 15px 0px rgba(0, 0, 0, 0.082)
     position: fixed
     top: 41px
     left: 50%
-    // right: 50%
     transform: translate(-50%, -50%)
     display: flex
     justify-content: center
-    margin: 41px  0
+    margin: 41px 0
     padding: 18px
-    // max-width: 1230px
     background-color: #ffffff
+    h1
+        font-size: 40px
+        font-weight: 700
+        color: #00B98E
     .imgbox
-        h1
-            font-size: 40px
-            font-weight: 700
-            color: #00B98E
+        margin-right: 10px
+        background-color: #ffffff
+        width: 40px
+        padding: 5px
+        border: 1px dashed #40b571
+        border-radius: 20px
         img
-            margin-right: 10px
-            width: 40px
+            // margin-right: 10px
+            width: 30px
     nav
         display: flex
         margin-left: 387px
@@ -41,3 +46,9 @@
             padding: 7px 16px
             cursor: pointer
             transition: all 0.3s ease
+    .full
+        top: 0
+        left: 0
+        transform: none
+        width: 100%
+        border-radius: 0

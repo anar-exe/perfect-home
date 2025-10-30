@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font-family: "Inter", sans-serif;
   font-weight: 500;
@@ -15,7 +16,15 @@ body {
   padding: 0;
 }
 
-#header {
+.col-md-3 {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+header {
+  z-index: 10;
   box-shadow: 0 0 15px 0px rgba(0, 0, 0, 0.082);
   position: fixed;
   top: 41px;
@@ -27,28 +36,35 @@ body {
   padding: 18px;
   background-color: #ffffff;
 }
-#header .imgbox h1 {
+header h1 {
   font-size: 40px;
   font-weight: 700;
   color: #00B98E;
 }
-#header .imgbox img {
+header .imgbox {
   margin-right: 10px;
+  background-color: #ffffff;
   width: 40px;
+  padding: 5px;
+  border: 1px dashed #40b571;
+  border-radius: 20px;
 }
-#header nav {
+header .imgbox img {
+  width: 30px;
+}
+header nav {
   display: flex;
   margin-left: 387px;
   align-items: center;
 }
-#header nav a {
+header nav a {
   margin-right: 36px;
   color: #36506d;
   font-size: 15px;
   font-family: "Heebo", sans-serif;
   font-weight: 550;
 }
-#header nav .btn {
+header nav .btn {
   width: 125px;
   background-color: #00b98e;
   color: #fff;
@@ -60,6 +76,13 @@ body {
   padding: 7px 16px;
   cursor: pointer;
   transition: all 0.3s ease;
+}
+header .full {
+  top: 0;
+  left: 0;
+  transform: none;
+  width: 100%;
+  border-radius: 0;
 }
 
 #home .textbox {
@@ -99,36 +122,6 @@ body {
 #home .imgbox {
   padding: 0;
 }
-#home .imgbox {
-  position: relative;
-}
-#home .imgbox img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  display: none;
-  border-radius: 10px;
-}
-#home .imgbox button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(0, 0, 0, 0.5);
-  color: #fff;
-  border: none;
-  padding: 10px 16px;
-  cursor: pointer;
-  font-size: 18px;
-  border-radius: 50%;
-}
-#home .imgbox .prev {
-  left: 10px;
-}
-#home .imgbox .next {
-  right: 10px;
-}
-#home .active {
-  display: block;
-}
 #home .box {
   margin-top: 24px;
   padding: 0 40px;
@@ -140,7 +133,7 @@ body {
   height: 125px;
 }
 #home .box input {
-  padding: 20px 127px 25px 15px;
+  padding: 19px 127px 19px 15px;
 }
 #home .box select {
   border: none;
@@ -157,4 +150,119 @@ body {
   cursor: pointer;
   font-size: 16px;
   font-weight: 500;
+}
+
+#types {
+  margin: 105px auto;
+}
+#types .textbox {
+  margin-bottom: 25px;
+  text-align: center;
+  max-width: 600px;
+}
+#types .textbox h1 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #0E2E50;
+  margin-bottom: 20px;
+}
+#types .textbox p {
+  color: #666565;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+}
+#types .box {
+  margin-top: 25px;
+  width: 300px;
+  height: 225px;
+  background-color: #EFFDF5;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#types .box .minibox {
+  padding: 25px;
+  width: 265px;
+  height: 190px;
+  background-color: #ffffff;
+  border: 1px dashed #b8e0c9;
+  border-radius: 8px;
+  text-align: center;
+  transition: 0.3s;
+}
+#types .box .minibox h3 {
+  font-size: 16px;
+  color: #0E2E50;
+  font-weight: 700;
+}
+#types .box .minibox h5 {
+  font-size: 16px;
+  color: #00B68C;
+  margin-top: 10px;
+}
+#types .box .minibox .imgbox {
+  background-color: #ffffff;
+  margin: 0 auto 15px;
+  width: 80px;
+  padding: 15px;
+  border: 1px dashed #8cb99f;
+  border-radius: 40px;
+}
+#types .box:hover .minibox {
+  background-color: #00B98E;
+}
+#types .box:hover .minibox h3, #types .box:hover .minibox h5 {
+  color: #ffffff;
+}
+
+#placetofind .imgbox {
+  width: 560px;
+  height: 560px;
+}
+#placetofind .textbox {
+  width: 600px;
+  margin-top: 85px;
+}
+#placetofind .textbox h1 {
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 50px;
+  color: #0E2E50;
+}
+#placetofind .textbox p {
+  font-size: 16px;
+  line-height: 23px;
+  color: #646464;
+  margin: 25px 0;
+}
+#placetofind .textbox h4 {
+  position: relative;
+  font-size: 16px;
+  line-height: 28px;
+  color: #555;
+  padding-left: 28px;
+  margin-bottom: 10px;
+}
+#placetofind .textbox h4::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #00B98E;
+  font-weight: bold;
+}
+#placetofind .textbox .readmore {
+  margin-top: 20px;
+  padding: 19px 45px;
+  font-size: 15px;
+  color: #fff;
+  background-color: #00B98E;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#placetofind .textbox .readmore:hover {
+  background-color: #009f7a;
 }/*# sourceMappingURL=style.css.map */
