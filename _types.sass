@@ -23,6 +23,8 @@
         display: flex
         justify-content: center
         align-items: center
+        &:hover
+            cursor: pointer
         .minibox
             padding: 25px
             width: 265px
@@ -31,15 +33,17 @@
             border: 1px dashed #b8e0c9
             border-radius: 8px
             text-align: center
-            transition: 0.3s
+            transition: all 0.3s ease
             h3
                 font-size: 16px
                 color: #0E2E50
                 font-weight: 700
+                transition: all 0.3s ease
             h5
                 font-size: 16px
                 color: #00B68C
                 margin-top: 10px
+                transition: all 0.3s ease
             .imgbox
                 background-color: #ffffff
                 margin: 0 auto 15px
@@ -49,6 +53,12 @@
                 border-radius: 40px
         &:hover
             .minibox
+                cursor: pointer
                 background-color: #00B98E
                 h3,h5
+                    cursor: pointer
                     color: #ffffff
+                .imgbox
+                    cursor: pointer
+                    img
+                        cursor: pointer

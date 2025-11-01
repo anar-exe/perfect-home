@@ -64,17 +64,16 @@ header nav a {
   font-family: "Heebo", sans-serif;
   font-weight: 550;
 }
-header nav .btn {
+header nav button {
   width: 125px;
   background-color: #00b98e;
-  color: #fff;
+  color: #ffffff;
   font-family: "Heebo", sans-serif;
   font-weight: 500;
   font-size: 16px;
   border: none;
   border-radius: 5px;
-  padding: 7px 16px;
-  cursor: pointer;
+  padding: 10px 16px;
   transition: all 0.3s ease;
 }
 header .full {
@@ -104,20 +103,17 @@ header .full {
   max-width: 560px;
   line-height: 1.5;
 }
-#home .textbox .btn {
+#home .textbox button {
   background-color: #00b98e;
   color: #ffffff;
   font-family: "Heebo", sans-serif;
   border: none;
   border-radius: 5px;
-  cursor: pointer;
   transition: all 0.3s ease;
   margin-top: 34px;
-}
-#home .textbox .btn h5 {
   font-weight: 500;
   font-size: 16px;
-  padding: 11px 36px;
+  padding: 21px 47px;
 }
 #home .imgbox {
   padding: 0;
@@ -182,6 +178,9 @@ header .full {
   justify-content: center;
   align-items: center;
 }
+#types .box:hover {
+  cursor: pointer;
+}
 #types .box .minibox {
   padding: 25px;
   width: 265px;
@@ -190,17 +189,19 @@ header .full {
   border: 1px dashed #b8e0c9;
   border-radius: 8px;
   text-align: center;
-  transition: 0.3s;
+  transition: all 0.3s ease;
 }
 #types .box .minibox h3 {
   font-size: 16px;
   color: #0E2E50;
   font-weight: 700;
+  transition: all 0.3s ease;
 }
 #types .box .minibox h5 {
   font-size: 16px;
   color: #00B68C;
   margin-top: 10px;
+  transition: all 0.3s ease;
 }
 #types .box .minibox .imgbox {
   background-color: #ffffff;
@@ -211,13 +212,22 @@ header .full {
   border-radius: 40px;
 }
 #types .box:hover .minibox {
+  cursor: pointer;
   background-color: #00B98E;
 }
 #types .box:hover .minibox h3, #types .box:hover .minibox h5 {
+  cursor: pointer;
   color: #ffffff;
+}
+#types .box:hover .minibox .imgbox {
+  cursor: pointer;
+}
+#types .box:hover .minibox .imgbox img {
+  cursor: pointer;
 }
 
 #placetofind .imgbox {
+  padding-left: 22px;
   width: 560px;
   height: 560px;
 }
@@ -265,4 +275,138 @@ header .full {
 }
 #placetofind .textbox .readmore:hover {
   background-color: #009f7a;
+}
+
+#listing {
+  padding: 105px 0;
+}
+#listing .textbox {
+  padding: 0 22px;
+}
+#listing .textbox h1 {
+  font-size: 44px;
+  font-weight: 700;
+  color: #0E2E50;
+  margin-bottom: 5px;
+}
+#listing .textbox p {
+  font-size: 16px;
+  line-height: 23px;
+  color: #646464;
+  margin: 20px 0 50px;
+}
+#listing button {
+  margin: 50px 4px;
+  background-color: #ffffff;
+  color: #0E2E50;
+  font-family: "Heebo", sans-serif;
+  border: 1px solid #00B98E;
+  border-radius: 5px;
+  padding: 10px 12px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+#listing button:focus {
+  background-color: #00B98E;
+  color: #ffffff;
+  box-shadow: 0 0 10px 5px #7FDCC6;
+}
+#listing button:hover {
+  background-color: #00B98E;
+  color: #ffffff;
+}
+#listing .box {
+  position: relative;
+  border-radius: 5px;
+  margin-bottom: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 0 0 20px 5px #eeeeee;
+}
+#listing .box:hover .imgbox {
+  transform: scale(1.1);
+}
+#listing .box .imgbox {
+  border-start-start-radius: 5px;
+  border-start-end-radius: 5px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+#listing .box .imgbox img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#listing .box .textbox {
+  margin: 30px 0;
+  font-family: "Inter", sans-serif;
+}
+#listing .box .textbox h2 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #00B98E;
+  margin-bottom: 20px;
+}
+#listing .box .textbox h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #0E2E50;
+  margin-bottom: 15px;
+}
+#listing .box .textbox h3:hover {
+  cursor: pointer;
+  color: #009472;
+}
+#listing .box .textbox h5 {
+  font-size: 16px;
+  margin-left: 7px;
+}
+#listing .box .textbox .icon {
+  display: flex;
+}
+#listing .box .textbox .icon i {
+  color: #00B98E;
+}
+#listing .box .minibox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px dashed #72e3a2;
+  height: 35px;
+  font-size: 14px;
+}
+#listing .box .minibox i {
+  color: #00B98E;
+}
+#listing .box .minibox h4 {
+  margin-left: 7px;
+  color: #646464;
+}
+#listing .box .first {
+  width: 151px;
+}
+#listing .box .second {
+  width: 132px;
+}
+#listing .box .third {
+  width: 132px;
+}
+#listing .box .text {
+  position: absolute;
+  z-index: inherit;
+  background-color: #00B98E;
+  border-radius: 7px;
+  padding: 10px 15px;
+  color: #ffffff;
+  top: 25px;
+  left: 25px;
+}
+#listing .browse {
+  margin: 0;
+  background-color: #00B98E;
+  color: #ffffff;
+  font-family: "Heebo", sans-serif;
+  border-radius: 5px;
+  padding: 19px 48px;
+  font-size: 16px;
+  transition: all 0.3s ease;
 }/*# sourceMappingURL=style.css.map */
