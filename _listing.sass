@@ -1,7 +1,7 @@
 #listing
-    padding: 105px 0
+    padding: 48px 0
     .textbox
-        padding: 0 22px
+        padding: 0 10px
         h1
             font-size: 44px
             font-weight: 700
@@ -29,25 +29,25 @@
         &:hover
             background-color: #00B98E
             color: #ffffff
+    .padding
+        padding-right: 9px
     .box
         position: relative
+        overflow: hidden
         border-radius: 5px
         margin-bottom: 25px
         display: flex
         flex-wrap: wrap
         box-shadow: 0 0 20px 5px #eeeeee
         &:hover
-            .imgbox
+            img
                 transform: scale(1.1)
         .imgbox
-            border-start-start-radius: 5px
-            border-start-end-radius: 5px
-            overflow: hidden
             transition: 0.3s
             img
-                object-fit: cover
+                transition: all 0.3s ease
         .textbox
-            margin: 30px 0
+            margin: 30px 15px
             font-family: 'Inter', sans-serif
             h2
                 font-size: 20px
@@ -96,6 +96,15 @@
             padding: 10px 15px
             color: #ffffff
             top: 25px
+            left: 25px
+        .label
+            position: absolute
+            z-index: inherit
+            background-color: #ffffff
+            border-radius: 7px
+            padding: 10px 15px
+            color: #00B98E
+            bottom: 180px
             left: 25px
     .browse
         margin: 0
