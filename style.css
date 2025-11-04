@@ -24,47 +24,50 @@ body {
 }
 
 header {
-  z-index: 10;
+  position: relative;
+  z-index: 999;
+}
+header .box {
+  padding: 0 25px;
+  width: 80vw;
+  background-color: #ffffff;
   box-shadow: 0 0 15px 0px rgba(0, 0, 0, 0.082);
-  position: fixed;
-  top: 41px;
-  left: 50%;
-  transform: translate(-50%, -50%);
   display: flex;
-  justify-content: center;
-  margin: 41px 0;
-  padding: 18px;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 44px;
+  transition: 0.3s;
+}
+header .box .imgbox {
+  display: flex;
+  align-items: center;
+  width: 45px;
+  margin-right: 10px;
   background-color: #ffffff;
 }
-header h1 {
+header .box .imgbox img {
+  margin: 5px;
+  padding: 5px;
+  border: 1px dashed #40b571;
+  border-radius: 100px;
+}
+header .box .imgbox h1 {
+  padding: 18px 0;
   font-size: 40px;
   font-weight: 700;
   color: #00B98E;
 }
-header .imgbox {
-  margin-right: 10px;
-  background-color: #ffffff;
-  width: 40px;
-  padding: 5px;
-  border: 1px dashed #40b571;
-  border-radius: 20px;
+header .box nav a {
+  font-size: 14px;
+  color: #0E2E50;
+  padding: 28px 0;
+  margin-right: 30px;
 }
-header .imgbox img {
-  width: 30px;
+header .box nav a:active {
+  color: #00B98E;
 }
-header nav {
-  display: flex;
-  margin-left: 387px;
-  align-items: center;
-}
-header nav a {
-  margin-right: 36px;
-  color: #36506d;
-  font-size: 15px;
-  font-family: "Heebo", sans-serif;
-  font-weight: 550;
-}
-header nav button {
+header .box nav button {
   width: 125px;
   background-color: #00b98e;
   color: #ffffff;
@@ -76,12 +79,16 @@ header nav button {
   padding: 10px 16px;
   transition: all 0.3s ease;
 }
-header .full {
+header .box nav button:focus {
+  box-shadow: 0 0 10px 5px #7FDCC6;
+}
+header .box nav button:focus:hover {
+  background-color: #06d3a3;
+}
+
+.navbar.scroll {
+  width: 86vw;
   top: 0;
-  left: 0;
-  transform: none;
-  width: 100%;
-  border-radius: 0;
 }
 
 #home .textbox {
@@ -115,6 +122,18 @@ header .full {
   font-size: 16px;
   padding: 21px 47px;
 }
+#home .textbox button:focus {
+  box-shadow: 0 0 10px 5px #7FDCC6;
+}
+#home .textbox button:hover {
+  background-color: #06d3a3;
+}
+#home .box button:focus {
+  box-shadow: 0 0 10px 5px #6b8bac;
+}
+#home .box button:hover {
+  background-color: #092849;
+}
 #home .imgbox {
   padding: 0;
 }
@@ -129,6 +148,7 @@ header .full {
   height: 125px;
 }
 #home .box input {
+  max-width: 330px;
   padding: 19px 127px 19px 15px;
 }
 #home .box select {
@@ -146,6 +166,13 @@ header .full {
   cursor: pointer;
   font-size: 16px;
   font-weight: 500;
+  transition: all 0.3s ease;
+}
+#home #first {
+  max-width: 350px;
+}
+#home #second {
+  max-width: 310px;
 }
 
 #types {
@@ -276,8 +303,11 @@ header .full {
   border-radius: 5px;
   cursor: pointer;
 }
+#placetofind .textbox .readmore:focus {
+  box-shadow: 0 0 10px 5px #7FDCC6;
+}
 #placetofind .textbox .readmore:hover {
-  background-color: #009f7a;
+  background-color: #00c798;
 }
 
 #listing {
@@ -423,6 +453,12 @@ header .full {
   font-size: 16px;
   transition: all 0.3s ease;
 }
+#listing .browse:focus {
+  box-shadow: 0 0 10px 5px #7FDCC6;
+}
+#listing .browse:hover {
+  background-color: #06d3a3;
+}
 
 #contact {
   padding: 48px 0;
@@ -464,6 +500,9 @@ header .full {
 #contact .textbox .green:focus {
   box-shadow: 0 0 10px 5px #7FDCC6;
 }
+#contact .textbox .green:hover {
+  background-color: #06d3a3;
+}
 #contact .textbox .blue {
   margin-left: 7px;
   background-color: #0E2E50;
@@ -471,7 +510,10 @@ header .full {
   border-radius: 5px;
 }
 #contact .textbox .blue:focus {
-  box-shadow: 0 0 10px 5px #98A6B4;
+  box-shadow: 0 0 10px 5px #6b8bac;
+}
+#contact .textbox .blue:hover {
+  background-color: #092849;
 }
 
 #agents {

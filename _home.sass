@@ -25,6 +25,17 @@
             font-weight: 500
             font-size: 16px
             padding: 21px 47px
+            &:focus
+                box-shadow: 0 0 10px 5px #7FDCC6
+            &:hover
+                background-color: #06d3a3
+    .box
+        button
+            &:focus
+                box-shadow: 0 0 10px 5px #6b8bac
+            &:hover
+                background-color: #092849
+
     .imgbox
         padding: 0
 
@@ -85,10 +96,13 @@
         width: 100%
         height: 125px
         input
+            max-width: 330px
             padding: 19px 127px 19px 15px
+            // padding: auto
         select
             border: none
             padding: 18px 209px 19px 10px
+            // padding: auto
             border-radius: 5px
             color: #666565
         button
@@ -100,3 +114,8 @@
             cursor: pointer
             font-size: 16px
             font-weight: 500
+            transition: all 0.3s ease
+    #first
+        max-width: 350px
+    #second
+        max-width: 310px

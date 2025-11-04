@@ -1,53 +1,123 @@
+// header
+//     z-index: 10
+    // box-shadow: 0 0 15px 0px rgba(0, 0, 0, 0.082)
+//     position: fixed
+//     top: 41px
+//     left: 50%
+//     transform: translate(-50%, -50%)
+//     display: flex
+//     justify-content: center
+//     margin: 41px 0
+//     padding: 18px
+//     background-color: #ffffff
+//     transition: 0.4s
+    // h1
+    //     font-size: 40px
+    //     font-weight: 700
+    //     color: #00B98E
+//     .imgbox
+        // margin-right: 10px
+        // background-color: #ffffff
+//         width: 40px
+//         padding: 5px
+//         border: 1px dashed #40b571
+//         border-radius: 20px
+//         img
+//             width: 30px
+//     nav
+//         display: flex
+//         margin-left: 387px
+//         align-items: center
+//         a
+//             margin-right: 36px
+//             color: #36506d
+//             font-size: 15px
+//             font-family: 'Heebo', sans-serif
+//             font-weight: 550
+        // button
+        //     width: 125px
+        //     background-color: #00b98e
+        //     color: #ffffff
+        //     font-family: 'Heebo', sans-serif
+        //     font-weight: 500
+        //     font-size: 16px
+        //     border: none
+        //     border-radius: 5px
+        //     padding: 10px 16px
+        //     transition: all 0.3s ease
+        //     &:focus
+        //         box-shadow: 0 0 10px 5px #7FDCC6
+        //     &:hover
+        //         background-color: #06d3a3
+
+//     .full
+//         top: 0
+//         left: 0
+//         transform: none
+//         width: 100%
+//         border-radius: 0
+//     .col-md-12
+//         display: flex
+//         justify-content: space-between
+// .scroll
+//     margin: 0
+//     top: 38px
+//     width: 100%
+
 header
-    z-index: 10
-    box-shadow: 0 0 15px 0px rgba(0, 0, 0, 0.082)
-    position: fixed
-    top: 41px
-    left: 50%
-    transform: translate(-50%, -50%)
-    display: flex
-    justify-content: center
-    margin: 41px 0
-    padding: 18px
+  position: relative
+  z-index: 999
+  .box
+    padding: 0 25px
+    width: 80vw
     background-color: #ffffff
-    h1
+    box-shadow: 0 0 15px 0px rgba(0, 0, 0, 0.082)
+    display: flex
+    justify-content: space-between
+    align-items: center
+    position: fixed
+    top: 44px
+    transition: 0.3s
+    .imgbox
+      display: flex
+      align-items: center
+      width: 45px
+      margin-right: 10px
+      background-color: #ffffff
+      img
+        margin: 5px
+        padding: 5px
+        border: 1px dashed #40b571
+        border-radius: 100px
+      h1
+        padding: 18px 0
         font-size: 40px
         font-weight: 700
         color: #00B98E
-    .imgbox
-        margin-right: 10px
-        background-color: #ffffff
-        width: 40px
-        padding: 5px
-        border: 1px dashed #40b571
-        border-radius: 20px
-        img
-            // margin-right: 10px
-            width: 30px
     nav
-        display: flex
-        margin-left: 387px
-        align-items: center
-        a
-            margin-right: 36px
-            color: #36506d
-            font-size: 15px
-            font-family: 'Heebo', sans-serif
-            font-weight: 550
-        button
-            width: 125px
-            background-color: #00b98e
-            color: #ffffff
-            font-family: 'Heebo', sans-serif
-            font-weight: 500
-            font-size: 16px
-            border: none
-            border-radius: 5px
-            padding: 10px 16px
-            transition: all 0.3s ease
-    .full
-        top: 0
-        left: 0
-        transform: none
-        width: 100%
-        border-radius: 0
+      a
+        font-size: 14px
+        color: #0E2E50
+        padding: 28px 0
+        margin-right: 30px
+        &:active
+          color: #00B98E
+      button
+        width: 125px
+        background-color: #00b98e
+        color: #ffffff
+        font-family: 'Heebo', sans-serif
+        font-weight: 500
+        font-size: 16px
+        border: none
+        border-radius: 5px
+        padding: 10px 16px
+        transition: all 0.3s ease
+        &:focus
+          box-shadow: 0 0 10px 5px #7FDCC6
+          &:hover
+            background-color: #06d3a3
+
+.navbar.scroll
+  width: 86vw
+  top: 0
