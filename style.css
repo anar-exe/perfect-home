@@ -26,49 +26,65 @@ body {
 header {
   position: relative;
   z-index: 999;
+  /* 🔹 Responsive tənzimləmə */
 }
-header .box {
+header .navbar {
   padding: 0 25px;
-  width: 1230px;
+  width: 100%;
   max-width: 1320px;
   background-color: #ffffff;
-  box-shadow: 0 0 15px 0px rgba(0, 0, 0, 0.082);
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.082);
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: fixed;
   top: 44px;
+  left: 50%;
+  transform: translateX(-50%) scale(0.96);
   transition: 0.3s;
 }
-header .box .imgbox {
+header .navbar.scroll {
+  top: 0;
+  transform: translateX(-50%);
+}
+header .imgbox {
   display: flex;
   align-items: center;
-  width: 45px;
   margin-right: 10px;
   background-color: #ffffff;
 }
-header .box .imgbox img {
+header .imgbox img {
   margin: 5px;
   padding: 5px;
   border: 1px dashed #40b571;
   border-radius: 100px;
+  width: 45px;
+  height: 45px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
-header .box .imgbox h1 {
+header .imgbox h1 {
   padding: 18px 0;
   font-size: 40px;
   font-weight: 700;
   color: #00B98E;
 }
-header .box nav a {
-  font-size: 14px;
-  color: #0E2E50;
-  padding: 28px 0;
-  margin-right: 30px;
+header nav {
+  display: flex;
+  align-items: center;
 }
-header .box nav a:active {
+header nav a {
+  font-size: 16px;
+  color: #0E2E50;
+  padding: 32px 0;
+  margin-right: 35px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+header nav a:hover {
   color: #00B98E;
 }
-header .box nav button {
+header nav button {
   width: 125px;
   background-color: #00b98e;
   color: #ffffff;
@@ -79,25 +95,35 @@ header .box nav button {
   border-radius: 5px;
   padding: 10px 16px;
   transition: all 0.3s ease;
+  cursor: pointer;
 }
-header .box nav button:focus {
+header nav button:focus {
   box-shadow: 0 0 10px 5px #7FDCC6;
+  outline: none;
 }
-header .box nav button:focus:hover {
+header nav button:hover {
   background-color: #06d3a3;
 }
-
-.navbar.scroll {
-  width: 1320px;
-  top: 0;
+@media (max-width: 992px) {
+  header .navbar {
+    padding: 0 15px;
+  }
+  header nav {
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: flex-end;
+  }
+  header .imgbox h1 {
+    font-size: 28px;
+  }
 }
 
 #home .textbox {
-  padding: 66px 0 0 47px;
+  max-width: 560px;
 }
 #home .textbox h1 {
   font-size: 48px;
-  font-weight: bold;
+  font-weight: 700;
   color: #0E2E50;
   margin-bottom: 25px;
   line-height: 1.2;
@@ -129,32 +155,19 @@ header .box nav button:focus:hover {
 #home .textbox button:hover {
   background-color: #06d3a3;
 }
-#home .box button:focus {
-  box-shadow: 0 0 10px 5px #6b8bac;
-}
-#home .box button:hover {
-  background-color: #092849;
-}
-#home .imgbox {
-  padding: 0;
-}
 #home .box {
-  margin: 24px 0 48px;
-  padding: 0 40px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  background-color: #00B98E;
-  width: 100%;
-  height: 125px;
+  padding: 35px;
+  margin-bottom: 48px;
+  background-color: #00b98e;
 }
 #home .box input {
+  width: 334px;
+  height: 56px;
   max-width: 330px;
-  padding: 19px 127px 19px 15px;
 }
 #home .box select {
+  width: 334px;
   border: none;
-  padding: 18px 209px 19px 10px;
   border-radius: 5px;
   color: #666565;
 }
@@ -169,13 +182,12 @@ header .box nav button:focus:hover {
   font-weight: 500;
   transition: all 0.3s ease;
 }
-#home #first {
-  max-width: 350px;
+#home .box button:focus {
+  box-shadow: 0 0 10px 5px #6b8bac;
 }
-#home #second {
-  max-width: 310px;
+#home .box button:hover {
+  background-color: #092849;
 }
-
 #types {
   padding: 48px 0;
 }
@@ -371,7 +383,10 @@ header .box nav button:focus:hover {
   transition: all 0.3s ease;
 }
 #listing .box .textbox {
-  margin: 30px 15px;
+  padding: 30px 15px;
+  width: 416px;
+  background-color: #ffffff;
+  z-index: 10;
   font-family: "Inter", sans-serif;
 }
 #listing .box .textbox h2 {
