@@ -118,6 +118,10 @@ header nav button:hover {
   background-color: #06d3a3;
 }
 @media (max-width: 991.9px) {
+  header {
+    position: sticky;
+    top: 0;
+  }
   header .navbar {
     top: 0;
     transform: none;
@@ -152,7 +156,7 @@ header nav button:hover {
   max-width: 560px;
 }
 #home .textbox h1 {
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: 700;
   color: #0E2E50;
   margin-bottom: 25px;
@@ -217,6 +221,19 @@ header nav button:hover {
 }
 #home .box button:hover {
   background-color: #092849;
+}
+@media (max-width: 991.9px) {
+  #home .textbox h1 {
+    font-size: calc(1.425rem + 2.1vw);
+  }
+}
+@media (max-width: 767.9px) {
+  #home .img {
+    order: -1;
+  }
+  #home .textbox {
+    padding: 48px;
+  }
 }
 
 #types {
@@ -289,6 +306,11 @@ header nav button:hover {
 #types .box:hover .minibox .imgbox img {
   cursor: pointer;
 }
+@media (max-width: 991.9px) {
+  #types .textbox h1 {
+    font-size: calc(1.375rem + 1.5vw);
+  }
+}
 @media (max-width: 575.9px) {
   #types .box {
     margin: 25px;
@@ -354,6 +376,11 @@ header nav button:hover {
 }
 #placetofind .textbox .readmore:hover {
   background-color: #00c798;
+}
+@media (max-width: 991.9px) {
+  #placetofind .textbox h1 {
+    font-size: calc(1.375rem + 1.5vw);
+  }
 }
 
 #listing {
@@ -512,6 +539,9 @@ header nav button:hover {
   background-color: #06d3a3;
 }
 @media (max-width: 991.9px) {
+  #listing .textbox h1 {
+    font-size: calc(1.375rem + 1.5vw);
+  }
   #listing .padding {
     display: flex;
     justify-content: flex-start;
@@ -573,6 +603,11 @@ header nav button:hover {
 }
 #contact .textbox .blue:hover {
   background-color: #092849;
+}
+@media (max-width: 991.9px) {
+  #contact .textbox h1 {
+    font-size: calc(1.375rem + 1.5vw);
+  }
 }
 
 #agents {
@@ -666,6 +701,11 @@ header nav button:hover {
 }
 #agents .box .textbox .instagram:hover i {
   color: #ffffff;
+}
+@media (max-width: 991.9px) {
+  #agents .textbox h1 {
+    font-size: calc(1.375rem + 1.5vw);
+  }
 }
 
 #clients {

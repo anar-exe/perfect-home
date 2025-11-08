@@ -97,7 +97,7 @@
     .textbox
         max-width: 560px
         h1
-            font-size: 48px
+            font-size: 3rem
             font-weight: 700
             color: #0E2E50
             margin-bottom: 25px
@@ -151,6 +151,17 @@
                 box-shadow: 0 0 10px 5px #6b8bac
             &:hover
                 background-color: #092849
+    @media( max-width: 991.9px )
+        .textbox
+            h1
+                font-size: calc(1.425rem + 2.1vw)
+
+    @media( max-width: 767.9px )
+        .img
+            order: -1
+        .textbox
+            padding: 48px
+
     // @media (max-width: 1400px)
                 // margin-left: calc(-50vw + 50%)
 
