@@ -30,6 +30,9 @@
             background-color: #00B98E
             color: #ffffff
     .padding
+        display: flex
+        justify-content: flex-end
+        align-items: flex-end
         padding-right: 9px
     .box
         position: relative
@@ -122,3 +125,8 @@
             box-shadow: 0 0 10px 5px #7FDCC6
         &:hover
             background-color: #06d3a3
+    @media( max-width: 991.9px )
+        .padding
+            display: flex
+            justify-content: flex-start
+            align-items: flex-end

@@ -15,22 +15,17 @@
             line-height: 1.5
             text-align: center
     .box
-        margin-top: 25px
-        width: 300px
-        height: 225px
-        background-color: #EFFDF5
+        margin: 25px 12px
         border-radius: 8px
-        display: flex
-        justify-content: center
-        align-items: center
         &:hover
             cursor: pointer
         .minibox
-            padding: 25px
-            width: 265px
-            height: 190px
+            padding: 24px
+            // margin-bottom: 30px
+            // padding: 25px 80px
             background-color: #ffffff
             border: 1px dashed #b8e0c9
+            box-shadow: 0 0 0 15px #EFFDF5
             border-radius: 8px
             text-align: center
             transition: all 0.3s ease
@@ -62,3 +57,10 @@
                     cursor: pointer
                     img
                         cursor: pointer
+    @media( max-width: 575.9px )
+        .box
+            margin: 25px
+            display: flex
+            justify-content: center
+            .minibox
+                width: 445px
