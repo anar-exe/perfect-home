@@ -432,7 +432,7 @@ header nav button:hover {
   margin: 12px;
 }
 #listing .box .imgbox {
-  width: 415.9px;
+  max-width: 415.9px;
 }
 #listing .box .textbox {
   padding: 24px;
@@ -486,6 +486,22 @@ header nav button:hover {
 }
 #listing .box .infobox .info:last-child {
   border-right: none;
+}
+#listing .browse {
+  margin: 15px;
+  background-color: #00B98E;
+  color: #ffffff;
+  font-family: "Heebo", sans-serif;
+  border-radius: 5px;
+  padding: 19px 48px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+#listing .browse:focus {
+  box-shadow: 0 0 10px 5px #7FDCC6;
+}
+#listing .browse:hover {
+  background-color: #06d3a3;
 }
 
 #contact {
