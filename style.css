@@ -145,7 +145,7 @@ header nav button:hover {
     display: none;
   }
   header nav.menu-toggle {
-    margin-top: -100%;
+    margin-top: -150%;
   }
   header .menu {
     display: block;
@@ -197,17 +197,17 @@ header nav button:hover {
 #home .box input {
   width: 334px;
   height: 56px;
-  max-width: 330px;
 }
 #home .box select {
   width: 334px;
   border: none;
+  color: #757575;
   border-radius: 5px;
   color: #666565;
 }
 #home .box button {
   background-color: #0E2E50;
-  color: #fff;
+  color: #ffffff;
   border: none;
   padding: 20px 73px;
   border-radius: 5px;
@@ -222,9 +222,35 @@ header nav button:hover {
 #home .box button:hover {
   background-color: #092849;
 }
+@media (max-width: 1399.9px) {
+  #home .box input {
+    width: 300px;
+  }
+  #home .box select {
+    width: 250px;
+    padding-left: 5px;
+  }
+}
+@media (max-width: 1199.9px) {
+  #home .box input {
+    width: 230px;
+  }
+  #home .box select {
+    width: 230px;
+  }
+  #home .box button {
+    padding: 20px 50px;
+  }
+}
 @media (max-width: 991.9px) {
   #home .textbox h1 {
     font-size: calc(1.425rem + 2.1vw);
+  }
+  #home .box input {
+    width: 150px;
+  }
+  #home .box select {
+    width: 150px;
   }
 }
 @media (max-width: 767.9px) {
@@ -233,6 +259,22 @@ header nav button:hover {
   }
   #home .textbox {
     padding: 48px;
+  }
+  #home .box {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  #home .box input {
+    width: 100%;
+  }
+  #home .box select {
+    width: 100%;
+    height: 56px;
+  }
+  #home .box button {
+    width: 100%;
   }
 }
 
@@ -532,13 +574,14 @@ header nav button:hover {
 #listing .browse:hover {
   background-color: #06d3a3;
 }
+@media (max-width: 991.9px) {
+  #listing .padding {
+    justify-content: flex-start;
+  }
+}
 
 #contact {
   padding: 48px 0;
-}
-#contact .imgbox {
-  width: 570px;
-  height: 400px;
 }
 #contact .imgbox img {
   border-radius: 6px;
@@ -589,8 +632,16 @@ header nav button:hover {
   background-color: #092849;
 }
 @media (max-width: 991.9px) {
+  #contact .textbox {
+    margin-top: 48px;
+  }
   #contact .textbox h1 {
     font-size: calc(1.375rem + 1.5vw);
+  }
+}
+@media (max-width: 384.9px) {
+  #contact .textbox .blue {
+    margin-left: 0;
   }
 }
 
@@ -746,7 +797,6 @@ header nav button:hover {
   align-items: center;
   position: relative;
   border-radius: 10px;
-  width: 280px;
   height: 55px;
   border: 1px solid #8797A8;
   transition: 0.3s;
@@ -839,6 +889,27 @@ header nav button:hover {
 }
 #footer nav a {
   padding-right: 25px;
+}
+@media (max-width: 767.9px) {
+  #footer .textbox {
+    margin: 50px 0 0 20px;
+  }
+  #footer .box {
+    margin: 50px 0 0 20px;
+    display: flex;
+  }
+  #footer .box h3 {
+    width: 100%;
+  }
+  #footer .box .img img {
+    width: 150px;
+  }
+  #footer .flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+  }
 }
 
 #pagenotfound .textbox {
