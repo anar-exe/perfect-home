@@ -14,22 +14,17 @@
             max-width: 560px
             line-height: 1.5
     .box
+        margin: 20px 15px
         border-radius: 5px
         position: relative
         box-shadow: 0 0 20px 5px #eeeeee
         .imgbox
-            width: 300px
             img
-                border-start-start-radius: 5px
-                border-start-end-radius: 5px
+                border-radius: 5px 5px 0 0
         .textbox
             text-align: center
-
+            padding: 24px
             margin-top: 16px
-            padding: 24px 70px
-            display: flex
-            flex-wrap: wrap
-            justify-content: center
             h4
                 font-size: 20px
                 font-weight: 600
@@ -38,36 +33,40 @@
             h6
                 font-size: 14px
                 color: #666565
+        .icons
+            position: absolute
+            left: 50%
+            bottom: 84px
+            transform: translateX(-50%)
+            display: flex
+            align-items: center
+            gap: 12px
+            transition: all 0.3s ease
+            cursor: pointer
             .icon
-                position: absolute
-                bottom: 84px
+                display: flex
+                justify-content: center
+                align-items: center
                 width: 38px
                 height: 38px
                 background-color: #ffffff
-                display: flex
-                border-radius: 19px
-                justify-content: center
-                align-items: center
                 box-shadow: 0 0 30px rgba(0, 0, 0, .15)
-                transition: all 0.3s ease
-                cursor: pointer
+                border-radius: 19px
                 i
+                    gap: 1rem
                     color: #00B98E
                     cursor: pointer
             .facebook
-                left: 85px
                 &:hover
                     background-color: #00B98E
                     i
                         color: #ffffff
             .twitter
-                left: 130px
                 &:hover
                     background-color: #00B98E
                     i
                         color: #ffffff
             .instagram
-                left: 175px
                 &:hover
                     background-color: #00B98E
                     i
