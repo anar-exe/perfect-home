@@ -892,7 +892,7 @@ header nav button:hover {
 }
 @media (max-width: 767.9px) {
   #footer .textbox {
-    margin: 50px 0 0 20px;
+    margin: 50px 20px 0 20px;
   }
   #footer .box {
     margin: 50px 0 0 20px;
