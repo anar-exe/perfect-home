@@ -431,20 +431,24 @@ header nav button:hover {
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.08);
   margin: 12px;
 }
-#listing .box .imgbox {
-  max-width: 415.9px;
+#listing .box .imgbox img {
+  width: 100%;
+  height: auto;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 #listing .box .textbox {
   padding: 24px;
 }
 #listing .box .textbox h3 {
-  font-size: 20px;
+  font-size: 1.5rem;
   font-weight: 700;
   padding-bottom: 15px;
   color: #00B98E;
 }
 #listing .box .textbox h4 {
-  font-size: 20px;
+  font-size: 1.5rem;
   font-weight: 600;
   padding-bottom: 15px;
   color: #0E2E50;
