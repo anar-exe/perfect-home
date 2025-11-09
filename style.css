@@ -317,7 +317,12 @@ header nav button:hover {
     width: 100%;
   }
   #home .prev, #home .next {
+    width: 40px;
+    height: 40px;
     left: 10px;
+  }
+  #home .next {
+    top: 60%;
   }
 }
 
