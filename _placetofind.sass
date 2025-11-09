@@ -2,10 +2,12 @@
     padding: 48px 0
     .imgbox
         padding: 22px
-        width: 560px
-        height: 560px
+        // width: 560px
+        // height: 560px
     .textbox
-        margin-top: 85px
+        display: flex
+        align-items: center
+        flex-wrap: wrap
         h1
             font-size: 44px
             font-weight: 700
@@ -16,6 +18,7 @@
             line-height: 23px
             color: #646464
             margin: 25px 0
+    .ticked
         h4
             position: relative
             font-size: 16px
@@ -31,19 +34,19 @@
                 top: 0
                 color: #00B98E
                 font-weight: bold
-        .readmore
-            margin-top: 20px
-            padding: 19px 45px
-            font-size: 15px
-            color: #fff
-            background-color: #00B98E
-            border: none
-            border-radius: 5px
-            cursor: pointer
-            &:focus
-                box-shadow: 0 0 10px 5px #7FDCC6
-            &:hover
-                background-color: #00c798
+    .readmore
+        margin-top: 20px
+        padding: 19px 45px
+        font-size: 15px
+        color: #fff
+        background-color: #00B98E
+        border: none
+        border-radius: 5px
+        cursor: pointer
+        &:focus
+            box-shadow: 0 0 10px 5px #7FDCC6
+        &:hover
+            background-color: #00c798
     @media( max-width: 991.9px )
         .textbox
             h1

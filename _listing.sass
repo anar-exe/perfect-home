@@ -35,101 +35,186 @@
         align-items: flex-end
         padding-right: 9px
     .box
-        position: relative
-        overflow: hidden
-        border-radius: 5px
-        margin-bottom: 25px
-        display: flex
-        flex-wrap: wrap
-        box-shadow: 0 0 20px 5px #eeeeee
-        &:hover
-            img
-                transform: scale(1.1)
+        box-shadow: 0 0 30px rgba(0, 0, 0, .08)
+        margin: 12px
         .imgbox
-            transition: 0.3s
-            img
-                transition: all 0.3s ease
+            width: 415.9px
         .textbox
-            padding: 30px 15px
-            width: 416px
-            background-color: #ffffff
-            z-index: 10
-            font-family: 'Inter', sans-serif
-            h2
-                font-size: 20px
-                font-weight: 700
-                color: #00B98E
-                margin-bottom: 20px
+            padding: 24px
             h3
                 font-size: 20px
                 font-weight: 700
+                padding-bottom: 15px
+                color: #00B98E
+            h4
+                font-size: 20px
+                font-weight: 600
+                padding-bottom: 15px
                 color: #0E2E50
-                margin-bottom: 15px
-                &:hover
-                    cursor: pointer
-                    color: #009472
             h5
                 font-size: 16px
-                margin-left: 7px
+                padding-left: 5px
+                color: #666565
             .icon
                 display: flex
                 i
                     color: #00B98E
-        .minibox
+        .infobox
             display: flex
-            justify-content: center
+            justify-content: space-between
             align-items: center
-            border: 1px dashed #72e3a2
-            height: 35px
-            font-size: 14px
-            i
-                color: #00B98E
-            h4
-                margin-left: 7px
-                color: #646464
+            background: #ffffff
+            border-top: 1px dashed #B2EADD
+            border-radius: 0 0 8px 8px
+            .info
+                flex: 1
+                text-align: center
+                margin: 10px 0
+                border-right: 1px dashed #B2EADD
+                display: flex
+                justify-content: center
+                align-items: center
+                gap: 8px
+                font-size: 14px
+                color: #666565
+                font-weight: 500
+                i
+                    color: #00B98E
+                &:last-child
+                    border-right: none
 
-        .first
-            width: 151px
-        .second
-            width: 132px
-        .third
-            width: 132px
-        .text
-            position: absolute
-            z-index: inherit
-            background-color: #00B98E
-            border-radius: 7px
-            padding: 10px 15px
-            color: #ffffff
-            top: 25px
-            left: 25px
-        .label
-            position: absolute
-            z-index: inherit
-            background-color: #ffffff
-            border-radius: 7px
-            padding: 10px 15px
-            color: #00B98E
-            bottom: 180px
-            left: 25px
-    .browse
-        margin: 0
-        background-color: #00B98E
-        color: #ffffff
-        font-family: 'Heebo', sans-serif
-        border-radius: 5px
-        padding: 19px 48px
-        font-size: 16px
-        transition: all 0.3s ease
-        &:focus
-            box-shadow: 0 0 10px 5px #7FDCC6
-        &:hover
-            background-color: #06d3a3
-    @media( max-width: 991.9px )
-        .textbox
-            h1
-                font-size: calc(1.375rem + 1.5vw)
-        .padding
-            display: flex
-            justify-content: flex-start
-            align-items: flex-end
+// #listing
+//     padding: 48px 0
+//     .textbox
+//         padding: 0 10px
+//         h1
+//             font-size: 44px
+//             font-weight: 700
+//             color: #0E2E50
+//             margin-bottom: 5px
+//         p
+//             font-size: 16px
+//             line-height: 23px
+//             color: #646464
+//             margin: 20px 0 50px
+//     button
+//         margin: 50px 4px
+//         background-color: #ffffff
+//         color: #0E2E50
+//         font-family: 'Heebo', sans-serif
+//         border: 1px solid #00B98E
+//         border-radius: 5px
+//         padding: 10px 12px
+//         font-size: 16px
+//         transition: all 0.3s ease
+//         &:focus
+//             background-color: #00B98E
+//             color: #ffffff
+//             box-shadow: 0 0 10px 5px #7FDCC6
+//         &:hover
+//             background-color: #00B98E
+//             color: #ffffff
+    // .padding
+    //     display: flex
+    //     justify-content: flex-end
+    //     align-items: flex-end
+    //     padding-right: 9px
+//     .box
+//         position: relative
+//         overflow: hidden
+//         border-radius: 5px
+//         margin-bottom: 25px
+//         display: flex
+//         flex-wrap: wrap
+//         box-shadow: 0 0 20px 5px #eeeeee
+//         &:hover
+//             img
+//                 transform: scale(1.1)
+//         .imgbox
+//             transition: 0.3s
+//             img
+//                 transition: all 0.3s ease
+//         .textbox
+//             padding: 30px 15px
+//             width: 416px
+//             background-color: #ffffff
+//             z-index: 10
+//             font-family: 'Inter', sans-serif
+//             h2
+//                 font-size: 20px
+//                 font-weight: 700
+//                 color: #00B98E
+//                 margin-bottom: 20px
+//             h3
+//                 font-size: 20px
+//                 font-weight: 700
+//                 color: #0E2E50
+//                 margin-bottom: 15px
+//                 &:hover
+//                     cursor: pointer
+//                     color: #009472
+//             h5
+//                 font-size: 16px
+//                 margin-left: 7px
+//             .icon
+//                 display: flex
+//                 i
+//                     color: #00B98E
+//         .minibox
+//             display: flex
+//             justify-content: center
+//             align-items: center
+//             border: 1px dashed #72e3a2
+//             height: 35px
+//             font-size: 14px
+//             i
+//                 color: #00B98E
+//             h4
+//                 margin-left: 7px
+//                 color: #646464
+
+//         .first
+//             width: 151px
+//         .second
+//             width: 132px
+//         .third
+//             width: 132px
+//         .text
+//             position: absolute
+//             z-index: inherit
+//             background-color: #00B98E
+//             border-radius: 7px
+//             padding: 10px 15px
+//             color: #ffffff
+//             top: 25px
+//             left: 25px
+//         .label
+//             position: absolute
+//             z-index: inherit
+//             background-color: #ffffff
+//             border-radius: 7px
+//             padding: 10px 15px
+//             color: #00B98E
+//             bottom: 180px
+//             left: 25px
+//     .browse
+//         margin: 0
+//         background-color: #00B98E
+//         color: #ffffff
+//         font-family: 'Heebo', sans-serif
+//         border-radius: 5px
+//         padding: 19px 48px
+//         font-size: 16px
+//         transition: all 0.3s ease
+//         &:focus
+//             box-shadow: 0 0 10px 5px #7FDCC6
+//         &:hover
+//             background-color: #06d3a3
+//     @media( max-width: 991.9px )
+//         .textbox
+//             h1
+//                 font-size: calc(1.375rem + 1.5vw)
+//         .padding
+//             display: flex
+//             justify-content: flex-start
+//             align-items: flex-end

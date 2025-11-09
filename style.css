@@ -327,11 +327,11 @@ header nav button:hover {
 }
 #placetofind .imgbox {
   padding: 22px;
-  width: 560px;
-  height: 560px;
 }
 #placetofind .textbox {
-  margin-top: 85px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
 }
 #placetofind .textbox h1 {
   font-size: 44px;
@@ -345,7 +345,7 @@ header nav button:hover {
   color: #646464;
   margin: 25px 0;
 }
-#placetofind .textbox h4 {
+#placetofind .ticked h4 {
   position: relative;
   font-size: 16px;
   line-height: 28px;
@@ -353,7 +353,7 @@ header nav button:hover {
   padding-left: 28px;
   margin-bottom: 10px;
 }
-#placetofind .textbox h4::before {
+#placetofind .ticked h4::before {
   content: "✔";
   position: absolute;
   left: 0;
@@ -361,7 +361,7 @@ header nav button:hover {
   color: #00B98E;
   font-weight: bold;
 }
-#placetofind .textbox .readmore {
+#placetofind .readmore {
   margin-top: 20px;
   padding: 19px 45px;
   font-size: 15px;
@@ -371,10 +371,10 @@ header nav button:hover {
   border-radius: 5px;
   cursor: pointer;
 }
-#placetofind .textbox .readmore:focus {
+#placetofind .readmore:focus {
   box-shadow: 0 0 10px 5px #7FDCC6;
 }
-#placetofind .textbox .readmore:hover {
+#placetofind .readmore:hover {
   background-color: #00c798;
 }
 @media (max-width: 991.9px) {
@@ -428,49 +428,31 @@ header nav button:hover {
   padding-right: 9px;
 }
 #listing .box {
-  position: relative;
-  overflow: hidden;
-  border-radius: 5px;
-  margin-bottom: 25px;
-  display: flex;
-  flex-wrap: wrap;
-  box-shadow: 0 0 20px 5px #eeeeee;
-}
-#listing .box:hover img {
-  transform: scale(1.1);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.08);
+  margin: 12px;
 }
 #listing .box .imgbox {
-  transition: 0.3s;
-}
-#listing .box .imgbox img {
-  transition: all 0.3s ease;
+  width: 415.9px;
 }
 #listing .box .textbox {
-  padding: 30px 15px;
-  width: 416px;
-  background-color: #ffffff;
-  z-index: 10;
-  font-family: "Inter", sans-serif;
-}
-#listing .box .textbox h2 {
-  font-size: 20px;
-  font-weight: 700;
-  color: #00B98E;
-  margin-bottom: 20px;
+  padding: 24px;
 }
 #listing .box .textbox h3 {
   font-size: 20px;
   font-weight: 700;
-  color: #0E2E50;
-  margin-bottom: 15px;
+  padding-bottom: 15px;
+  color: #00B98E;
 }
-#listing .box .textbox h3:hover {
-  cursor: pointer;
-  color: #009472;
+#listing .box .textbox h4 {
+  font-size: 20px;
+  font-weight: 600;
+  padding-bottom: 15px;
+  color: #0E2E50;
 }
 #listing .box .textbox h5 {
   font-size: 16px;
-  margin-left: 7px;
+  padding-left: 5px;
+  color: #666565;
 }
 #listing .box .textbox .icon {
   display: flex;
@@ -478,75 +460,32 @@ header nav button:hover {
 #listing .box .textbox .icon i {
   color: #00B98E;
 }
-#listing .box .minibox {
+#listing .box .infobox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+  border-top: 1px dashed #B2EADD;
+  border-radius: 0 0 8px 8px;
+}
+#listing .box .infobox .info {
+  flex: 1;
+  text-align: center;
+  margin: 10px 0;
+  border-right: 1px dashed #B2EADD;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px dashed #72e3a2;
-  height: 35px;
+  gap: 8px;
   font-size: 14px;
+  color: #666565;
+  font-weight: 500;
 }
-#listing .box .minibox i {
+#listing .box .infobox .info i {
   color: #00B98E;
 }
-#listing .box .minibox h4 {
-  margin-left: 7px;
-  color: #646464;
-}
-#listing .box .first {
-  width: 151px;
-}
-#listing .box .second {
-  width: 132px;
-}
-#listing .box .third {
-  width: 132px;
-}
-#listing .box .text {
-  position: absolute;
-  z-index: inherit;
-  background-color: #00B98E;
-  border-radius: 7px;
-  padding: 10px 15px;
-  color: #ffffff;
-  top: 25px;
-  left: 25px;
-}
-#listing .box .label {
-  position: absolute;
-  z-index: inherit;
-  background-color: #ffffff;
-  border-radius: 7px;
-  padding: 10px 15px;
-  color: #00B98E;
-  bottom: 180px;
-  left: 25px;
-}
-#listing .browse {
-  margin: 0;
-  background-color: #00B98E;
-  color: #ffffff;
-  font-family: "Heebo", sans-serif;
-  border-radius: 5px;
-  padding: 19px 48px;
-  font-size: 16px;
-  transition: all 0.3s ease;
-}
-#listing .browse:focus {
-  box-shadow: 0 0 10px 5px #7FDCC6;
-}
-#listing .browse:hover {
-  background-color: #06d3a3;
-}
-@media (max-width: 991.9px) {
-  #listing .textbox h1 {
-    font-size: calc(1.375rem + 1.5vw);
-  }
-  #listing .padding {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-end;
-  }
+#listing .box .infobox .info:last-child {
+  border-right: none;
 }
 
 #contact {
