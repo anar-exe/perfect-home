@@ -18,27 +18,6 @@
 </head>
 
 <body>
-    <!-- <header>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 scroll">
-                    <div class="imgbox d-flex align-items-center">
-                        <img src="assets/logo.png" alt="" class="img">
-                    </div>
-                    <h1>Makaan</h1>
-                    <nav>
-                        <a href="#home">HOME</a>
-                        <a href="#about">ABOUT</a>
-                        <a href="#property">PROPERTY</a>
-                        <a href="#pages">PAGES</a>
-                        <a href="#contact">CONTACT</a>
-                        <a href="#home"><button>Add Property</button></a>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </header> -->
-
     <header>
         <div class="container">
             <div class="row">
@@ -77,9 +56,12 @@
                         <button onclick="location.href='index.html'">Get Started</button>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 img">
-                    <div class="imgbox">
-                        <img src="assets/carousel-1.jpg" alt="">
+                <div class="col-12 col-md-6 img" style="position: relative;">
+                    <div class="imgbox homescroll">
+                        <img src="assets/carousel-1.jpg" class="first" alt="">
+                        <img src="assets/carousel-2.jpg" class="second" alt="">
+                        <button class="prev">&#x3c;</button>
+                        <button class="next">&#x3e;</button>
                     </div>
                 </div>
             </div>

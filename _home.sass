@@ -1,99 +1,38 @@
-// #home
-//     .textbox
-//         padding: 66px 0 0 47px
-//         h1
-//             font-size: 48px
-//             font-weight: bold
-//             color: #0E2E50
-//             margin-bottom: 25px
-//             line-height: 1.2
-//         span
-//             color: #00B98E
-//         p
-//             color: #666565
-//             font-size: 16px
-//             max-width: 560px
-//             line-height: 1.5
-//         button
-//             background-color: #00b98e
-//             color: #ffffff
-//             font-family: 'Heebo', sans-serif
-//             border: none
-//             border-radius: 5px
-//             transition: all 0.3s ease
-//             margin-top: 34px
-//             font-weight: 500
-//             font-size: 16px
-//             padding: 21px 47px
-//             &:focus
-//                 box-shadow: 0 0 10px 5px #7FDCC6
-//             &:hover
-//                 background-color: #06d3a3
-//     .imgbox
-//         padding: 0
-//     .box
-//         margin: 24px 0 48px
-//         padding: 0 40px
-//         display: flex
-//         align-items: center
-//         justify-content: center
-//         gap: 10px
-//         background-color: #00B98E
-//         width: 100%
-//         height: 125px
-//         input
-//             width: 300px
-//             height: 56px
-//             max-width: 330px
-//             // padding: 19px 127px 19px 15px
-//             // padding: auto
-//         select
-//             border: none
-//             // padding: 18px 209px 19px 10px
-//             // padding: auto
-//             border-radius: 5px
-//             color: #666565
-//         button
-//             background-color: #0E2E50
-//             color: #fff
-//             border: none
-//             padding: 20px 73px
-//             border-radius: 5px
-//             cursor: pointer
-//             font-size: 16px
-//             font-weight: 500
-//             transition: all 0.3s ease
-//             &:focus
-//                 box-shadow: 0 0 10px 5px #6b8bac
-//             &:hover
-//                 background-color: #092849
-//     #first
-//         max-width: 350px
-//     #second
-//         max-width: 310px
-
-//     @media ( max-width: 1399.9px )
-//         .box
-//             width: 100vw
-//             left: 50%
-//             // margin-left: -9.25vw
-//             margin-left: -50vw
-//             // justify-content: space-evenly
-//             position: relative
-//             input
-//                 max-width: 300px
-//         #first,#second
-//             max-width: 300px
-//             transform: translateY(3px)
-
-    // @media ( max-width: 1299.9px )
-//         .box
-//             input
-//                 max-width: 255px
-//         #first,#second
-//             max-width: 255px
-
 #home
+    .imgbox
+        overflow: hidden
+        img
+            width: 100%
+            display: block
+            transition: opacity .4s ease
+    .second
+        position: absolute
+        inset: 0
+        opacity: 0
+
+    .second.active
+        opacity: 1
+    .prev,
+    .next
+        position: absolute
+        transform: translateY(-50%)
+        width: 50px
+        height: 50px
+        border-radius: 25px
+        border: none
+        background-color: #00b98e
+        color: #ffffff
+        display: flex
+        align-items: center
+        justify-content: center
+        cursor: pointer
+        z-index: 5
+    .prev
+        top: 45%
+        left: -25px
+    .next
+        top: 55%
+        left: -25px
     .textbox
         max-width: 560px
         h1
@@ -193,17 +132,5 @@
                 height: 56px
             button
                 width: 100%
-
-    // @media (max-width: 1400px)
-                // margin-left: calc(-50vw + 50%)
-
-    // @media( max-width:1399.9px )
-    //     .container
-    //         margin: 0
-    //         padding: 0
-    //         .row
-    //             margin: 0
-    //             padding: 0
-    //             width: 100%
-    //             .col-md-6
-    //                 width: 50%
+        .prev,.next
+            left: 10px
