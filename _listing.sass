@@ -38,12 +38,21 @@
         box-shadow: 0 0 30px rgba(0, 0, 0, .08)
         margin: 12px
         .imgbox
-            // max-width: 415.9px
+            overflow: hidden
+            transition: 0.3s
+            position: relative
             img
-                width: 100%
-                height: auto
-                display: block
-                object-fit: cover
+                transition: all 0.3s ease
+                cursor: pointer
+            .type
+                background-color: #00B98E
+                color: #ffffff
+                position: absolute
+                z-index: 10
+                top: 0
+                margin: 1.5rem
+                padding: 8px 15px
+                border-radius: 5px
         .textbox
             padding: 24px
             h3
@@ -64,6 +73,9 @@
                 display: flex
                 i
                     color: #00B98E
+        &:hover
+            img
+                transform: scale(1.1)
         .infobox
             display: flex
             justify-content: space-between
