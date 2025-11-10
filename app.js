@@ -29,7 +29,6 @@ function showSlide(index) {
   });
 }
 
-// ilk şəkli göstər
 showSlide(current);
 
 nextButton.addEventListener("click", () => {
